@@ -5,7 +5,6 @@ const Color = require("canvas-sketch-util/color");
 const risoColors = require("riso-colors");
 
 const seed = new Date();
-console.log(seed);
 
 const settings = {
   dimensions: [1080, 1080],
@@ -13,9 +12,6 @@ const settings = {
 
 const sketch = ({ context, width, height }) => {
   random.setSeed(seed);
-  console.log(random.value());
-  console.log(random.value());
-  console.log(random.value());
 
   let x, y, w, h, fill, stroke, blend;
 
